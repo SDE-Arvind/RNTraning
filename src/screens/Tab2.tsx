@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   StyleSheet,
   Text,
   View,
-  Button
 } from 'react-native';
+
+import { useSelector } from 'react-redux'
+import { RootState } from '../store/store';
 
 
 function Tab2(): React.JSX.Element {
+  const users = useSelector((state: RootState) => state.userReducer.users)
 
   return (
    <View>
-        <Text> Tab2 screen</Text>
+        <Text> {users.join('\r\n')}</Text>
     </View>
   );
 }

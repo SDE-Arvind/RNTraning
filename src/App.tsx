@@ -6,15 +6,17 @@ import {
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { RootNavigator } from './navigation/RootNavigator';
-
+import { store } from './store/store'
+import { Provider } from 'react-redux'
 
 function App(): React.JSX.Element {
 
   return (
-    <NavigationContainer>
-      <RootNavigator/>
-    </NavigationContainer>
-   
+    <Provider store={store}>
+      <NavigationContainer>
+        <RootNavigator/>
+      </NavigationContainer>
+    </Provider>
   );
 }
 
