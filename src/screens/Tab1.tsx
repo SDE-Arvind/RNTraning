@@ -11,6 +11,8 @@ import { Routes } from '../constants/constant';
 import useMovies from '../hooks/useMovies';
 import { useDispatch } from 'react-redux'
 import { addUser } from '../store/UserSlice';
+import { requestWriteStoragePermission } from '../utility/runtimePermission';
+import { writeFileToSDCard } from '../utility/filestorage';
 
 
 function Tab1({ navigation }:any): React.JSX.Element {
@@ -19,8 +21,11 @@ function Tab1({ navigation }:any): React.JSX.Element {
   const [name,setName] = useState<string>("")
   const dispatch = useDispatch()
 
+  requestWriteStoragePermission();
+  
   const addUserHandler = () =>{
     dispatch(addUser(name))
+    writeFileToSDCard(name)
     setName("")
   }
   if(loading){
