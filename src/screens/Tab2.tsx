@@ -7,6 +7,7 @@ import {
 
 import { useSelector } from 'react-redux'
 import { RootState } from '../store/store';
+import withAuth from '../hoc/withAuth';
 
 
 function Tab2(): React.JSX.Element {
@@ -23,4 +24,4 @@ const styles = StyleSheet.create({
  
 });
 
-export default Tab2;
+export default withAuth( Tab2);
