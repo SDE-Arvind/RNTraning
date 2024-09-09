@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "682299976568",
+    "firebase_url": "https://mytripplanner-ccfa4.firebaseio.com",
+    "project_id": "mytripplanner-ccfa4",
+    "storage_bucket": "mytripplanner-ccfa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682299976568:android:caede6256fd7dba48ef68d",
+        "android_client_info": {
+          "package_name": "com.demoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682299976568-8odmo9pce3blcf9ekeascqlg8851ghta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWZQcNKH59FbJGZW1kHgEwwqhzWSf6pmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682299976568-8odmo9pce3blcf9ekeascqlg8851ghta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682299976568:android:54933f049469ae6f",
+        "android_client_info": {
+          "package_name": "com.example.arvind.mytrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682299976568-m1p4k1lltm4ifpevepsvb6potvmduit5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arvind.mytrip",
+            "certificate_hash": "650ca64af364c638230fecbf50a13c7c604f2bbd"
+          }
+        },
+        {
+          "client_id": "682299976568-soqq3hv2m8sat71n7tkoi0pfirf9in87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arvind.mytrip",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "682299976568-8odmo9pce3blcf9ekeascqlg8851ghta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWZQcNKH59FbJGZW1kHgEwwqhzWSf6pmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682299976568-8odmo9pce3blcf9ekeascqlg8851ghta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
