@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1750122212",
+    "project_id": "rn-training-18bf5",
+    "storage_bucket": "rn-training-18bf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1750122212:android:7c523568d42daca79e36f1",
+        "android_client_info": {
+          "package_name": "com.demoapp.a"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1OxWlXTSWEXZHgAavwtBhBbWZwl2FymY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

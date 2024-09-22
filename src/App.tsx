@@ -6,27 +6,11 @@ import {store} from './store/store';
 import {Provider} from 'react-redux';
 import messaging from '@react-native-firebase/messaging';
 import {requestNotificationPermission} from './utility/runtimePermission';
+import CodePush from 'react-native-code-push';
 
 function App(): React.JSX.Element {
-  const permissionSuccessCallback = () => {
-    console.log('Notification permission granted =====');
-    // Get the device token
-    const getToken = async () => {
-      const token = await messaging().getToken();
-      console.log('Device FCM Token:======', token);
-    };
-
-    getToken();
-  };
-  const permissionFailureCallback = () => {
-    Alert.alert('Notification permission not granted!!!');
-  };
-
   useEffect(() => {
-    // requestNotificationPermission(
-    //   permissionSuccessCallback,
-    //   permissionFailureCallback,
-    // );
+    requestNotificationPermission();
     // Get the device token
     const getToken = async () => {
       const token = await messaging().getToken();
@@ -55,4 +39,4 @@ function App(): React.JSX.Element {
 
 const styles = StyleSheet.create({});
 
-export default App;
+export default CodePush(App);

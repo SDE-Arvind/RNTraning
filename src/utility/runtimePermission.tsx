@@ -22,10 +22,7 @@ export const requestWriteStoragePermission = async () => {
   }
 };
 
-export const requestNotificationPermission = async (
-  successCallback: any,
-  failureCallback: any,
-) => {
+export const requestNotificationPermission = async () => {
   try {
     const granted = await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS,
@@ -38,11 +35,11 @@ export const requestNotificationPermission = async (
       },
     );
     if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-      successCallback();
+      // successCallback();
     } else {
-      failureCallback();
+      // failureCallback();
     }
   } catch (err) {
-    failureCallback(err);
+    // failureCallback(err);
   }
 };
